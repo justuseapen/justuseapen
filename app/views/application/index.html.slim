@@ -2,12 +2,13 @@
 / <!-- ABOVE THE FOLD -->
 / <!-- *** -->
 
-div.top-bar
-    a href="http://justusunlimited.com"
-      div.button
-        | BLOG
-
 div.section id="justus"
+  div.top-bar
+    section.top-bar-section
+      ul.right
+        li.active
+         a href="http://justusunlimited.com"
+          | BLOG
   div.title-box
     h1
       | I'm <span class="primary">Justus</span>
@@ -94,31 +95,31 @@ div class="section" id="love_rails"
 / <!-- *** -->
 
 div class="section" id="friendship"
-  div class="testimonials"
+  div class="testimonials row"
     h2 What they say about me...
-    div class="testimonial-block"
-      div class="testimonial-content box-trigger"
-        img src="#{ asset_path('personPlaceHolder.svg')}" class="portrait"
-        h3 Michael Alexis
-        div class="box" style="display: none;"
-          p class="quote" 
-            | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
+    ul.small-block-grid-3
+      li 
+        div class="box-trigger"
+          img src="#{ asset_path('personPlaceHolder.svg')}" class="portrait"
+          h3 Michael Alexis
+          div class="box" style="display: none;"
+            p class="quote" 
+              | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
+      li
+        div class="box-trigger"
+          img src="#{ asset_path('personPlaceHolder.svg')}" class="portrait"
+          h3 Nora Wright
+          div class="box" style="display: none;"
+            p class="quote"
+              | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
 
-    div class="testimonial-block"
-      div class="testimonial-content box-trigger"
-        img src="#{ asset_path('personPlaceHolder.svg')}" class="portrait"
-        h3 Nora Wright
-        div class="box" style="display: none;"
-          p class="quote"
-            | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
-
-    div class="testimonial-block"
-      div class="testimonial-content box-trigger"
-        img src="#{ asset_path('personPlaceHolder.svg') }" class="portrait"
-        h3 Christopher Schelzi
-        div class="box" style="display: none;"
-          p class="quote"
-            | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
+      li
+        div class="box-trigger"
+          img src="#{ asset_path('personPlaceHolder.svg') }" class="portrait"
+          h3 Christopher Schelzi
+          div class="box" style="display: none;"
+            p class="quote"
+              | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
 
 div class="section" id="built_together"
   h2 id="hire"
