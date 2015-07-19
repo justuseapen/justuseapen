@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: justuseapen_development
+  pool: 5
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: justuseapen_test
+  pool: 5
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: justuseapen_production
+  pool: 5
+  username: 
+  password:

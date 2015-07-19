@@ -1,0 +1,206 @@
+/* *** */
+/* TEXT CSS */
+/* *** */
+
+h1 {
+  font-size: 7em;
+  font-weight: 200;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+ color: white; 
+ font-weight: 200;
+}
+
+p {
+  color: white;
+  font-size: 1.2em;
+}
+
+.detail {
+  font-style: italic;
+  font-size: .8em;
+}
+
+.primary {
+  color: #FF5353;
+  font-weight: 600;
+}
+
+.secondary {
+  color: #CC82FF;
+  font-weight: 600;
+}
+
+
+/* Default to centered text*/
+.section {
+  text-align:center;
+}
+
+/* Tiny icons */
+.icon {
+  height:2em;
+  width: auto;
+}
+
+/* *** */
+/* BOXES CSS */
+/* *** */
+
+.box-trigger {
+  background-color: rgba(.2,.2,.2,.1);
+  margin: 1px;
+  padding-top: .5em;
+  padding-bottom: .1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.box-trigger:hover {
+  background-color: rgba(.9,.9,.9,.25);
+  height: auto;
+}
+
+.box-trigger:hover .icon {
+  height: 4em;
+}
+
+.box {
+  color: white;
+  font-weight: 100;
+}
+
+.box a {
+  text-decoration: none;
+}
+
+/* *** */
+/* SECTION STYLES */
+/* *** */
+
+/* ABOVE-THE-FOLD */
+
+#justus .tableCell {
+  display: block;
+}
+
+.top-bar {
+  background-color: black;
+  width: 100%;
+  height: 4em;
+  top: 0;
+}
+
+.top-bar .button {
+  height:100%;
+  color: white;
+  float: right;
+  line-height: 1;
+  padding-top: 2em;
+  padding-right: 2em;
+  font-weight: 100;
+}
+
+.title-box {
+  text-align: left;
+  margin-left: 2em;
+  position: fixed;
+  bottom: 0;
+  line-height: 0.3;
+}
+
+.title-box .primary {
+  background-color: white;
+  padding-left: 0.1em;
+  padding-right: .1em;
+}
+
+#slogan {
+  font-size: 2em;
+}
+
+/* ACCOMPLISHMENTS + EXPERIENCE */
+#city_lights a {
+  text-decoration: none;
+}
+
+.startUps h3 {
+  font-size: 1.5em;
+}
+
+#accomplishments {
+  float: right;
+}
+
+#resilient a {
+  color: white;
+  font-weight: 100
+}
+
+#tugg {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* THE CREED */
+
+#love_rails .creed {
+  height: 100%;
+  background-color: #6B9499;
+  color: black;
+  text-align: left;
+  display: table;
+  line-height: 1.77;
+}
+
+.creed .primary {
+  color: white;
+}
+
+.creed-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.creed h3 {
+  font-size: 2em;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  width: 100%;
+  display: inline-block;
+  color: white;
+}
+
+.testimonial-block {
+  width: 30%;
+  background-color: rgba(5,5,5,.5);
+  padding: 1em;
+  float:left;
+}
+
+.quote {
+  font-weight: 100;
+  font-style: italic;
+  font-size: .75em;
+}
+
+.portrait {
+  width: 170px;
+  height: 130px;
+}
+
+
+/* HIRE ME */
+#hire {
+  font-size:8em;
+  color:#FFBE4D;
+}

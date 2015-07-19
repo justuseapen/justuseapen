@@ -1,0 +1,149 @@
+/ <!-- *** -->
+/ <!-- ABOVE THE FOLD -->
+/ <!-- *** -->
+
+div.top-bar
+    a href="http://justusunlimited.com"
+      div.button
+        | BLOG
+
+div.section id="justus"
+  div.title-box
+    h1
+      | I'm <span class="primary">Justus</span>
+        
+    h3#slogan
+      <span class="secondary">I make software</span>.
+    p On time, and on budget<span class="secondary">&darr;</span>
+
+/ <!-- *** -->
+/ <!-- EXPERIENCE & ACCOMPLISHMENTS -->
+/ <!-- *** -->
+
+div.section id="city_lights"
+  div class="small-10 large-4 columns" id="accomplishments"
+    h3
+      | I work with startups in Boston:
+    div.startUps
+      / <!-- PAVLOK -->
+      a class="primary" href="http://pavlok.com"
+        div id="pavlok" class="box-trigger"
+          img class="icon" src=" #{ asset_path('pavlok-icon.svg') } "          
+          h3 Pavlok
+          div class="box" style="display: none"
+            p class="detail" 
+              | May 2014 - June 2015
+            p Head of Software Product
+            p Built and lead software department from product conception to launch
+            p Delivered 1 backend API, 3 Mobile Apps, countless proof-of-concepts and prototypes <!-- (LINK TO APP STORE) -->
+      / <!-- FSHAREX -->
+      a class="secondary" href="http://fsharex.com"
+        div id="fsharex" class="box-trigger"
+          img class="icon" src="#{ asset_path('fsharex-icon.svg')}"
+          h3 FSHAREX
+          div class="box" style="display: none"
+            p class="detail" 2014 - Present
+            p Co-organizer
+            p MC of the Monthly Meetup
+            p Raiser of funds
+
+        / <!-- RESILIENT CODERS -->
+        a class="primary" href="https://resilientcoders.org"
+          div id="resilient" class="box-trigger"
+            img class="icon" src="#{ asset_path('resilient-icon.svg')}"
+            h3 Resilient Coders
+            div class="box" style="display: none"
+              p class="detail" 2014 - Present
+              p Volunteer Instructor
+              p 
+                | Mentoring Boston-area youth, teaching html, css, a bit of Rails. Occasionally helping them <a  href="http://tugg.org/news/giving-back-is-worth-it"><span class ="primary" id="tugg"> win $50,000 pitch competitions</span></a>.
+
+        / <!-- LAUNCH ACADEMY -->
+        a class="secondary" href="https://launchacademy.com"
+          div id="launch" class="box-trigger"
+            img class="icon" src="#{ asset_path('launch-icon.svg')}"
+            h3 Launch Academy
+            div class="box" style="display: none"
+              p class="detail" Winter 2013
+              p Apprentice Web Developer
+
+/ <!-- *** -->
+/ <!-- SKILLS AND EXPERTISE -->
+/ <!-- *** -->
+
+div class="section" id="love_rails"
+  div class="creed small-5 large-3 columns"
+    div class="creed-content"
+      h3 class="primary"
+       | The Creed
+
+      p 
+      | I like <span class="primary">rapid prototyping</span>. Ruby on Rails to move fast on the backend. Javascript, scss, jquery, and bootstrap on the frontend.
+
+      p 
+        | <span class="primary">I build API</span>'s with oauth2 consumption AND provisioning. I’ve used sidekiq for jobs and doorkeeper and devise and I’m constantly sandboxing and I’m glad Heroku exists. Redis is nice and foreman is my friend.
+
+      p I love a <span class="primary">good design</span>, and I’d be happy to do one myself.
+
+      p I’m a hacker at heart. I move fast because I want to <span class="primary">learn fast</span>. That means we make mistakes and that means we stay agile.
+
+      h4 <span class="primary">Full Stack.</span>
+
+/ <!-- *** -->
+/ <!-- TESTIMONIALS -->
+/ <!-- *** -->
+
+div class="section" id="friendship"
+  div class="testimonials"
+    h2 What they say about me...
+    div class="testimonial-block"
+      div class="testimonial-content box-trigger"
+        img src="#{ asset_path('personPlaceHolder.svg')}" class="portrait"
+        h3 Michael Alexis
+        div class="box" style="display: none;"
+          p class="quote" 
+            | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
+
+    div class="testimonial-block"
+      div class="testimonial-content box-trigger"
+        img src="#{ asset_path('personPlaceHolder.svg')}" class="portrait"
+        h3 Nora Wright
+        div class="box" style="display: none;"
+          p class="quote"
+            | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
+
+    div class="testimonial-block"
+      div class="testimonial-content box-trigger"
+        img src="#{ asset_path('personPlaceHolder.svg') }" class="portrait"
+        h3 Christopher Schelzi
+        div class="box" style="display: none;"
+          p class="quote"
+            | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
+
+div class="section" id="built_together"
+  h2 id="hire"
+    a href="mailto:justuseapen@gmail.com" style="color:#FFBE4D" id="hire_me"
+      | Let's build something together
+
+
+javascript:
+  $("#justus").backstretch(
+    "#{ asset_path('speaking_at_fsharex.jpg') }" 
+  );
+javascript:
+  $("#city_lights").backstretch( 
+    "#{ asset_path('city_lights.jpg') }" 
+  );
+javascript:
+  $("#friendship").backstretch( 
+    "#{ asset_path('friendship7.jpg') }" 
+  );
+javascript:
+  $("#love_rails").backstretch( 
+    "#{ asset_path('Urbanism.jpg') }"
+  );
+javascript:
+  $("#built_together").backstretch( 
+    "#{ asset_path('build_something.jpg') }"
+  );
+    
