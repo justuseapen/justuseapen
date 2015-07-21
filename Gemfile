@@ -11,6 +11,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim'
 gem 'foundation-rails'
 
+group :production do
+	gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
