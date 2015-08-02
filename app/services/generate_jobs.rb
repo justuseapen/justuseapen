@@ -13,7 +13,7 @@ class GenerateJobs
 													 source_url: source_url,
 													 source_domain: source_domain,
 													 company_name: company_name,
-													 email: email)
+													 contact_email: email)
 			job.save
 		end
 	end
