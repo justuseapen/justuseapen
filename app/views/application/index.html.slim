@@ -72,6 +72,40 @@ div.section id="city_lights"
                   | Created Distracker for tracking Distractions
 
 / <!-- *** -->
+/ <!-- OTHER PROJECTS -->
+/ <!-- *** -->
+
+div class="section" id="other_projects"
+  div id="wips"
+    h1 Other projects I've worked on
+    div.grid
+      figure class="effect-marley"
+        img src="#{ asset_path('ad-agency-video.jpg')}" alt="Ad Agency Video Screen"
+        figcaption
+          h2 
+            | Ad Agency Video
+          p 
+            a href="http://adagencyvideo.com"
+              | Video production for creative agencies.
+      figure class="effect-sarah"
+        img src="#{ asset_path('bostons-bad.jpg')}" alt="Bostons Bad Screen"
+        figcaption
+          h2 
+            | Boston's Bad
+          p
+            a href="http://bostonsbad.herokuapp.com" 
+              | Hashtag cool photos with #BostonsBad to be featured on this site!
+      figure class="effect-julia"
+        img src="#{ asset_path('self-govern.jpg')}" alt="self govern screen capture"
+        figcaption
+          h2 
+            | Self govern
+          p
+            a href="http://self-govern.herokuapp.com" 
+              | The first community-driven web app
+
+
+/ <!-- *** -->
 / <!-- SKILLS AND EXPERTISE -->
 / <!-- *** -->
 
@@ -142,6 +176,10 @@ javascript:
 javascript:
   $("#friendship").backstretch( 
     "#{ asset_path('friendship7.jpg') }" 
+  );
+javascript:
+  $("#other_projects").backstretch( 
+    "#{ asset_path('Architect.jpg') }"
   );
 javascript:
   $("#love_rails").backstretch( 
