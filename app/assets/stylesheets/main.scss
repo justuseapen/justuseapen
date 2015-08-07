@@ -1,25 +1,6 @@
-/* *** */
-/* TEXT CSS */
-/* *** */
-
-h1 {
-  font-size: 7em;
-  font-weight: 200;
-  color: white;
-}
-
-h2 {
-  color: white;
-}
-
-h3 {
- color: white; 
- font-weight: 200;
-}
-
-p {
-  color: white;
-  font-size: 1.2em;
+* {
+  -webkit-font-smoothing:antialiased;
+  word-wrap: break-word;
 }
 
 .detail {
@@ -36,7 +17,6 @@ p {
   color: #CC82FF;
   font-weight: 600;
 }
-
 
 /* Default to centered text*/
 .section {
@@ -98,14 +78,12 @@ p {
   line-height: 0.3;
 }
 
-.title-box .primary {
+.title-box .primary, .title-box .secondary {
   background-color: white;
   padding-left: 0.1em;
-  padding-right: .1em;
-}
-
-#slogan {
-  font-size: 2em;
+  padding-right: 0.1em;
+  padding-bottom: 0.1em;
+  padding-top: 0.1em;
 }
 
 /* ACCOMPLISHMENTS + EXPERIENCE */
@@ -121,7 +99,7 @@ p {
   float: right;
 }
 
-#resilient a {
+#resilient {
   color: white;
   font-weight: 100
 }
@@ -132,8 +110,10 @@ p {
 }
 
 /* OTHER PROJECTS */
-#wips h1 {
+
+#wips #section-title{
   background-color:#7D8388;
+  margin-bottom: 5em;
 }
 
 .grid figure {
@@ -202,10 +182,11 @@ p {
 .creed-content {
   display: table-cell;
   vertical-align: middle;
+  text-overflow: scroll;
 }
 
 .creed h3 {
-  font-size: 2em;
+  font-size: 2em
 }
 
 /* TESTIMONIALS */
@@ -213,7 +194,7 @@ p {
 .quote {
   font-weight: 100;
   font-style: italic;
-  font-size: .75em;
+  color:black;
 }
 
 .portrait {
@@ -223,6 +204,5 @@ p {
 
 /* HIRE ME */
 #hire {
-  font-size:8em;
   color:#FFBE4D;
 }
