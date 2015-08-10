@@ -6,28 +6,38 @@ div.section id="justus"
   div.top-bar
     section.top-bar-section
       ul.right
+        li
+          a href="http://twitter.com/justuseapen"
+            | TWITTER
+        li
+          a href="http://github.com/justuseapen"
+            | GITHUB
+        li
+          a href="http://justusunlimited.com"
+            | BLOG
         li.active
-         a href="http://justusunlimited.com"
-          | BLOG
+          a href="mailto:justuseapen@gmail.com"
+            | HIRE
   div.title-box
     h1
       | I'm <span class="primary">Justus</span>   
     h3#slogan
-      <span class="secondary">I make web technology</span>.
-    p On time, and on budget<span class="secondary">&darr;</span>
+      | I make <span class="secondary">web technology</span>.
+    p On time, and on budget <span class="secondary">&darr;</span>
 
 / <!-- *** -->
 / <!-- EXPERIENCE & ACCOMPLISHMENTS -->
 / <!-- *** -->
 
 div.section id="city_lights"
-  div class="small-10 large-4 columns" id="accomplishments"
-    h3
+  div class="small-12 middle-8 large-6 small-centered medium-centered large-centered columns" id="accomplishments"
+    h2
       | I work with startups in Boston:
+    
     div.startUps
       
       / <!-- PAVLOK -->
-      a class="primary" href="http://pavlok.com"
+      a href="http://pavlok.com"
         div id="pavlok" class="box-trigger"
           img class="icon" src=" #{ asset_path('pavlok-icon.svg') } "          
           h3 Pavlok
@@ -36,10 +46,11 @@ div.section id="city_lights"
               | May 2014 - June 2015
             p Head of Software Product
             p Built and lead software department from product conception to launch
-            p Delivered 1 backend API, 3 Mobile Apps, countless proof-of-concepts and prototypes <!-- (LINK TO APP STORE) -->
+            p 
+              | Delivered 1 backend API, <a href="https://itunes.apple.com/us/app/pavlok/id1004661695?mt=8#">3</a> <a href="https://itunes.apple.com/us/app/pavlok-remote/id999758721?mt=8#">Mobile</a> <a href="https://itunes.apple.com/us/app/pavlok-alarm/id1005633826?mt=8#">Apps</a>, countless proof-of-concepts and prototypes
       
       / <!-- FSHAREX -->
-      a class="secondary" href="http://fsharex.com"
+      a href="http://fsharex.com"
         div id="fsharex" class="box-trigger"
           img class="icon" src="#{ asset_path('fsharex-icon.svg')}"
           h3 FSHAREX
@@ -49,28 +60,28 @@ div.section id="city_lights"
             p MC of the Monthly Meetup
             p Raiser of funds
 
-        / <!-- RESILIENT CODERS -->
-        a class="primary" href="https://resilientcoders.org"
-          div id="resilient" class="box-trigger"
-            img class="icon" src="#{ asset_path('resilient-icon.svg')}"
-            h3 Resilient Coders
-            div class="box" style="display: none"
-              p class="detail" 2014 - Present
-              p Volunteer Instructor
-              p 
-                | Mentoring Boston-area youth, teaching html, css, a bit of Rails. Occasionally helping them <a  href="http://tugg.org/news/giving-back-is-worth-it"><span class ="primary" id="tugg"> win $50,000 pitch competitions</span></a>.
+      / <!-- RESILIENT CODERS -->
+      a href="https://resilientcoders.org"
+        div id="resilient" class="box-trigger"
+          img class="icon" src="#{ asset_path('resilient-icon.svg')}"
+          h3 Resilient Coders
+          div class="box" style="display: none"
+            p class="detail" 2014 - Present
+            p Volunteer Instructor
+            p 
+              | Mentoring Boston-area youth, teaching html, css, a bit of Rails. Occasionally helping them <a href="http://tugg.org/news/giving-back-is-worth-it"><span class ="primary" id="tugg"> win $50,000 pitch competitions</span></a>.
 
-        / <!-- LAUNCH ACADEMY -->
-        a class="secondary" href="https://launchacademy.com"
-          div id="launch" class="box-trigger"
-            img class="icon" src="#{ asset_path('launch-icon.svg')}"
-            h3 Launch Academy
-            div class="box" style="display: none"
-              p class="detail" Winter 2013
-              p Apprentice Web Developer
-              a href="http://distracker.herokuapp.com/"
-                p.primary 
-                  | Created Distracker for tracking Distractions
+      / <!-- LAUNCH ACADEMY -->
+      a href="https://launchacademy.com"
+        div id="launch" class="box-trigger"
+          img class="icon" src="#{ asset_path('launch-icon.svg')}"
+          h3 Launch Academy
+          div class="box" style="display: none"
+            p class="detail" Winter 2013
+            p Apprentice Web Developer
+            a href="http://distracker.herokuapp.com/"
+              p.primary 
+                | Created Distracker for tracking Distractions
 
 / <!-- *** -->
 / <!-- OTHER PROJECTS -->
@@ -78,44 +89,58 @@ div.section id="city_lights"
 
 div class="section" id="other_projects"
   div id="wips"
-    h1 Other projects I've worked on
-    div.grid
-      figure class="effect-marley"
-        img src="#{ asset_path('ad-agency-video.jpg')}" alt="Ad Agency Video Screen"
-        figcaption
-          h2 
-            | Ad Agency Video
-          p 
-            a href="http://adagencyvideo.com"
-              | Video production for creative agencies.
-      figure class="effect-sarah"
-        img src="#{ asset_path('bostons-bad.jpg')}" alt="Bostons Bad Screen"
-        figcaption
-          h2 
-            | Boston's Bad
-          p
-            a href="http://bostonsbad.herokuapp.com" 
-              | Hashtag cool photos with #BostonsBad to be featured on this site!
-      figure class="effect-julia"
-        img src="#{ asset_path('self-govern.jpg')}" alt="self govern screen capture"
-        figcaption
-          h2 
-            | Self govern
-          p
-            a href="http://self-govern.herokuapp.com" 
-              | The first community-driven web app
+    div class="small-12 columns" id="section-title"
+      h2 Other projects I've contributed to
+    ul class="small-block-grid-2 medium-block-grid-3"
+      li
+        a class="th" href="http://adagencyvideo.com"
+          img src="#{ asset_path('ad-agency-video.jpg')}"
+      li
+        a class="th" href="http://bostonsbad.herokuapp.com"
+          img src="#{ asset_path('bostons-bad.jpg')}"
+      li
+        a class="th" href="http://self-govern.herokuapp.com"
+          img src="#{ asset_path('self-govern.jpg')}"
+      li
+        a class="th" href="http://bostonrb.org"
+          img src="#{ asset_path('bostonrb.jpg')}"
+    / div.grid
+    /   figure class="effect-marley"
+    /     img src="#{ asset_path('ad-agency-video.jpg')}" alt="Ad Agency Video Screen"
+    /     figcaption
+    /       h2 
+    /         | Ad Agency Video
+    /       p 
+    /         a href="http://adagencyvideo.com"
+    /           | Video production for creative agencies.
+    /   figure class="effect-sarah"
+    /     img src="#{ asset_path('bostons-bad.jpg')}" alt="Bostons Bad Screen"
+    /     figcaption
+    /       h2 
+    /         | Boston's Bad
+    /       p
+    /         a href="http://bostonsbad.herokuapp.com" 
+    /           | Hashtag cool photos with #BostonsBad to be featured on this site!
+    /   figure class="effect-julia"
+    /     img src="#{ asset_path('self-govern.jpg')}" alt="self govern screen capture"
+    /     figcaption
+    /       h2 
+    /         | Self govern
+    /       p
+    /         a href="http://self-govern.herokuapp.com" 
+    /           | The first community-driven web app
 
 / <!-- *** -->
 / <!-- SKILLS AND EXPERTISE -->
 / <!-- *** -->
 
 div class="section" id="love_rails"
-  div class="creed small-9 medium-5 large-3 columns"
+  div class="creed small-12 medium-5 large-3 columns"
     div class="creed-content"
       h3 class="primary"
-       | The Creed
+       | The Stack
       p 
-      | I like <span class="primary">rapid prototyping</span>. Ruby on Rails to move fast on the backend. Javascript, scss, jquery, and bootstrap on the frontend.
+        | We like <span class="primary">rapid prototyping</span>. Ruby on Rails to move fast on the backend. Javascript, scss, jquery, and bootstrap on the frontend.
       p 
         | <span class="primary">I build APIs</span> with oauth2 consumption AND provisioning. I’ve used sidekiq for jobs and doorkeeper and devise and I’m constantly sandboxing and I’m glad Heroku exists.
       p I love a <span class="primary">good design</span>, and I’d be happy to do one myself.
@@ -130,34 +155,48 @@ div class="section" id="love_rails"
 div class="section" id="friendship"
   div class="testimonials row"
     h2 What they say about me...
-    ul.small-block-grid-3
-      li 
-        div class="box-trigger"
+    ul class="small-block-grid-2 medium-block-grid-3"
+      li class="testifier" onclick="$('#michaelModal').foundation('reveal', 'open');"
+        a href="#" data-reveal-id="michaelModal"
           img src="#{ asset_path('michael-alexis.png')}" class="portrait"
           h3 Michael Alexis
-          div class="box" style="display: none;"
-            p class="quote" 
-              | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
-      li
-        div class="box-trigger"
+
+        div id="michaelModal" class="reveal-modal" aria-labelledby="modalTitle" aria-hidden="true" role="dialog"
+          h2 Michael Alexis
+          p class="quote" 
+            | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
+          a class="close-reveal-modal" aria-label="Close" onclick="$('#michaelModal').hide();$('.reveal-modal-bg').hide()"
+            | &#215;
+
+      li class="testifier" onclick="$('#noraModal').foundation('reveal', 'open');"
+        a href="#" data-reveal-id="noraModal"
           img src="#{ asset_path('nora-wright.png')}" class="portrait"
           h3 Nora Wright
-          div class="box" style="display: none;"
-            p class="quote"
-              | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
-      li
-        div class="box-trigger"
+
+        div id="noraModal" class="reveal-modal" aria-labelledby="modalTitle" aria-hidden="true" role="dialog"
+          h2 Nora Wright
+          p class="quote" 
+            | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
+          a class="close-reveal-modal" aria-label="Close" onclick="$('#noraModal').hide();$('.reveal-modal-bg').hide()"
+            | &#215;
+      li class="testifier" onclick="$('#chrisModal').foundation('reveal', 'open');"
+        a href="#" data-reveal-id="chrisModal"
           img src="#{ asset_path('chris-schelzi.png') }" class="portrait"
-          h3 Christopher Schelzi
-          div class="box" style="display: none;"
-            p class="quote"
-              | "Justus is one of those rare people who is able to work at both a micro and a macro level, being both detail oriented as well as firmly grasping the big picture. I experienced this first hand during a number of projects. Justus is wise beyond his years and I know he has a bright future ahead of him. Highly recommended. "
+          h3 Chris Schelzi
+
+        div id="chrisModal" class="reveal-modal" aria-labelledby="modalTitle" aria-hidden="true" role="dialog"
+          h2 Chris Schelzi
+          p class="quote" 
+            | "Justus is one of those rare people who is able to work at both a micro and a macro level, being both detail oriented as well as firmly grasping the big picture. I experienced this first hand during a number of projects. Justus is wise beyond his years and I know he has a bright future ahead of him. Highly recommended. "
+          a class="close-reveal-modal" aria-label="Close" onclick="$('#chrisModal').hide();$('.reveal-modal-bg').hide()"
+            | &#215;
 
 div class="section" id="built_together"
-  img src="#{ asset_path('speaking_at_politico.png') }" class="portrait"
-  h2 id="hire"
-    a href="mailto:justuseapen@gmail.com" style="color:#FFBE4D" id="hire_me"
-      | Let's build something together
+  a href="mailto:justuseapen@gmail.com" style="color:#FFBE4D" id="hire_me"
+    img src="#{ asset_path('speaking_at_politico.png') }" class="portrait"
+    div class="button alert"
+      h2 id="hire"
+        | Let's build something together
 
 javascript:
   $("#justus").backstretch(

@@ -26,3 +26,4 @@ $(document).ready(function() {
     // anchors: ['justus', 'city_lights', 'love_rails', 'friendship', 'builtTogether']
   });
 });
+$('a.reveal-link').trigger('click');

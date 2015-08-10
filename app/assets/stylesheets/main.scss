@@ -1,25 +1,6 @@
-/* *** */
-/* TEXT CSS */
-/* *** */
-
-h1 {
-  font-size: 7em;
-  font-weight: 200;
-  color: white;
-}
-
-h2 {
-  color: white;
-}
-
-h3 {
- color: white; 
- font-weight: 200;
-}
-
-p {
-  color: white;
-  font-size: 1.2em;
+* {
+  -webkit-font-smoothing:antialiased;
+  word-wrap: break-word;
 }
 
 .detail {
@@ -37,7 +18,6 @@ p {
   font-weight: 600;
 }
 
-
 /* Default to centered text*/
 .section {
   text-align:center;
@@ -54,7 +34,7 @@ p {
 /* *** */
 
 .box-trigger {
-  background-color: rgba(.2,.2,.2,.1);
+  background-color: rgba(.2,.2,.2,.4);
   margin: 1px;
   padding-top: .5em;
   padding-bottom: .1em;
@@ -63,7 +43,7 @@ p {
 }
 
 .box-trigger:hover {
-  background-color: rgba(.9,.9,.9,.25);
+  background-color: rgba(.9,.9,.9,.6);
   height: auto;
 }
 
@@ -98,31 +78,28 @@ p {
   line-height: 0.3;
 }
 
-.title-box .primary {
+.title-box .primary, .title-box .secondary {
   background-color: white;
   padding-left: 0.1em;
-  padding-right: .1em;
-}
-
-#slogan {
-  font-size: 2em;
+  padding-right: 0.1em;
+  padding-bottom: 0.1em;
+  padding-top: 0.1em;
 }
 
 /* ACCOMPLISHMENTS + EXPERIENCE */
-#city_lights a {
-  text-decoration: none;
+
+#accomplishments h2 {
+  background-color: white;
+  color: black;
+  font-weight: 100;
 }
 
 .startUps h3 {
   font-size: 1.5em;
+  font-weight: 100;
 }
 
-#accomplishments {
-  float: right;
-}
-
-#resilient a {
-  color: white;
+#resilient {
   font-weight: 100
 }
 
@@ -132,8 +109,14 @@ p {
 }
 
 /* OTHER PROJECTS */
-#wips h1 {
+
+#wips #section-title{
   background-color:#7D8388;
+  margin-bottom: 5em;
+}
+
+#wips h2 {
+  font-weight: 100;
 }
 
 .grid figure {
@@ -185,13 +168,14 @@ p {
 
 #love_rails .creed {
   height: 100%;
-  background-color: #6B9499;
+  background-color: #996B6B;
   text-align: left;
   display: table;
   line-height: 1.77;
   p {
     color: black;
     font-size: 1em;
+    font-weight: 200;
   }
 }
 
@@ -202,18 +186,36 @@ p {
 .creed-content {
   display: table-cell;
   vertical-align: middle;
+  text-overflow: scroll;
 }
 
 .creed h3 {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 /* TESTIMONIALS */
 
+.testimonials h2 {
+  font-weight: 100;
+  background-color: white;
+  color: black;
+}
+
+.testifier h3 {
+  color: black;
+  background-color: rgba(255,255,255,1);
+  font-weight: 100;
+}
+
+.reveal-modal h2 {
+  color: black;
+  font-weight: 100;
+}
+
 .quote {
   font-weight: 100;
   font-style: italic;
-  font-size: .75em;
+  color:black;
 }
 
 .portrait {
@@ -223,6 +225,5 @@ p {
 
 /* HIRE ME */
 #hire {
-  font-size:8em;
   color:#FFBE4D;
 }
