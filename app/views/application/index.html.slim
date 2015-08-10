@@ -6,9 +6,18 @@ div.section id="justus"
   div.top-bar
     section.top-bar-section
       ul.right
+        li
+          a href="http://twitter.com/justuseapen"
+            | TWITTER
+        li
+          a href="http://github.com/justuseapen"
+            | GITHUB
+        li
+          a href="http://justusunlimited.com"
+            | BLOG
         li.active
-         a href="http://justusunlimited.com"
-          | BLOG
+          a href="mailto:justuseapen@gmail.com"
+            | HIRE
   div.title-box
     h1
       | I'm <span class="primary">Justus</span>   
@@ -21,8 +30,8 @@ div.section id="justus"
 / <!-- *** -->
 
 div.section id="city_lights"
-  div class="small-12 large-4 columns" id="accomplishments"
-    h3
+  div class="small-12 middle-8 large-6 small-centered medium-centered large-centered columns" id="accomplishments"
+    h2
       | I work with startups in Boston:
     
     div.startUps
@@ -37,7 +46,8 @@ div.section id="city_lights"
               | May 2014 - June 2015
             p Head of Software Product
             p Built and lead software department from product conception to launch
-            p Delivered 1 backend API, 3 Mobile Apps, countless proof-of-concepts and prototypes <!-- (LINK TO APP STORE) -->
+            p 
+              | Delivered 1 backend API, <a href="https://itunes.apple.com/us/app/pavlok/id1004661695?mt=8#">3</a> <a href="https://itunes.apple.com/us/app/pavlok-remote/id999758721?mt=8#">Mobile</a> <a href="https://itunes.apple.com/us/app/pavlok-alarm/id1005633826?mt=8#">Apps</a>, countless proof-of-concepts and prototypes
       
       / <!-- FSHAREX -->
       a href="http://fsharex.com"
@@ -59,7 +69,7 @@ div.section id="city_lights"
             p class="detail" 2014 - Present
             p Volunteer Instructor
             p 
-              | Mentoring Boston-area youth, teaching html, css, a bit of Rails. Occasionally helping them <a  href="http://tugg.org/news/giving-back-is-worth-it"><span class ="primary" id="tugg"> win $50,000 pitch competitions</span></a>.
+              | Mentoring Boston-area youth, teaching html, css, a bit of Rails. Occasionally helping them <a href="http://tugg.org/news/giving-back-is-worth-it"><span class ="primary" id="tugg"> win $50,000 pitch competitions</span></a>.
 
       / <!-- LAUNCH ACADEMY -->
       a href="https://launchacademy.com"
@@ -128,9 +138,9 @@ div class="section" id="love_rails"
   div class="creed small-12 medium-5 large-3 columns"
     div class="creed-content"
       h3 class="primary"
-       | The Creed
+       | The Stack
       p 
-        | I like <span class="primary">rapid prototyping</span>. Ruby on Rails to move fast on the backend. Javascript, scss, jquery, and bootstrap on the frontend.
+        | We like <span class="primary">rapid prototyping</span>. Ruby on Rails to move fast on the backend. Javascript, scss, jquery, and bootstrap on the frontend.
       p 
         | <span class="primary">I build APIs</span> with oauth2 consumption AND provisioning. I’ve used sidekiq for jobs and doorkeeper and devise and I’m constantly sandboxing and I’m glad Heroku exists.
       p I love a <span class="primary">good design</span>, and I’d be happy to do one myself.
@@ -146,30 +156,30 @@ div class="section" id="friendship"
   div class="testimonials row"
     h2 What they say about me...
     ul class="small-block-grid-2 medium-block-grid-3"
-      li 
+      li class="testifier" onclick="$('#michaelModal').foundation('reveal', 'open');"
         a href="#" data-reveal-id="michaelModal"
-          img src="#{ asset_path('michael-alexis.png')}" class="portrait" onclick="$('#michaelModal').foundation('reveal', 'open');"
+          img src="#{ asset_path('michael-alexis.png')}" class="portrait"
           h3 Michael Alexis
 
         div id="michaelModal" class="reveal-modal" aria-labelledby="modalTitle" aria-hidden="true" role="dialog"
           h2 Michael Alexis
           p class="quote" 
             | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
-          a class="close-reveal-modal" aria-label="Close" onclick="$('#michaelModal').foundation('reveal', 'close');"
+          a class="close-reveal-modal" aria-label="Close" onclick="$('#michaelModal').hide();$('.reveal-modal-bg').hide()"
             | &#215;
 
-      li
+      li class="testifier" onclick="$('#noraModal').foundation('reveal', 'open');"
         a href="#" data-reveal-id="noraModal"
-          img src="#{ asset_path('nora-wright.png')}" class="portrait" onclick="$('#noraModal').foundation('reveal', 'open');"
+          img src="#{ asset_path('nora-wright.png')}" class="portrait"
           h3 Nora Wright
 
         div id="noraModal" class="reveal-modal" aria-labelledby="modalTitle" aria-hidden="true" role="dialog"
           h2 Nora Wright
           p class="quote" 
             | "Justus and I worked together to build out the long term strategy of the company as well as the daily systems and processes to get there. He was always extremely well prepared for meetings, bringing new frameworks and perspective that helped us achieve massive and rapid growth. He was also the key player in making the rest of us live healthier more productive lives. 100% I would team up with him again."
-          a class="close-reveal-modal" aria-label="Close" onclick="$('#noraModal').foundation('reveal', 'close');"
+          a class="close-reveal-modal" aria-label="Close" onclick="$('#noraModal').hide();$('.reveal-modal-bg').hide()"
             | &#215;
-      li
+      li class="testifier" onclick="$('#chrisModal').foundation('reveal', 'open');"
         a href="#" data-reveal-id="chrisModal"
           img src="#{ asset_path('chris-schelzi.png') }" class="portrait"
           h3 Chris Schelzi
@@ -178,14 +188,15 @@ div class="section" id="friendship"
           h2 Chris Schelzi
           p class="quote" 
             | "Justus is one of those rare people who is able to work at both a micro and a macro level, being both detail oriented as well as firmly grasping the big picture. I experienced this first hand during a number of projects. Justus is wise beyond his years and I know he has a bright future ahead of him. Highly recommended. "
-          a class="close-reveal-modal" aria-label="Close" onclick="$('#chrisModal').foundation('reveal', 'close');"
+          a class="close-reveal-modal" aria-label="Close" onclick="$('#chrisModal').hide();$('.reveal-modal-bg').hide()"
             | &#215;
 
 div class="section" id="built_together"
-  img src="#{ asset_path('speaking_at_politico.png') }" class="portrait"
-  h2 class="button alert" id="hire"
-    a href="mailto:justuseapen@gmail.com" style="color:#FFBE4D" id="hire_me"
-      | Let's build something together
+  a href="mailto:justuseapen@gmail.com" style="color:#FFBE4D" id="hire_me"
+    img src="#{ asset_path('speaking_at_politico.png') }" class="portrait"
+    div class="button alert"
+      h2 id="hire"
+        | Let's build something together
 
 javascript:
   $("#justus").backstretch(

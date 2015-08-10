@@ -34,7 +34,7 @@
 /* *** */
 
 .box-trigger {
-  background-color: rgba(.2,.2,.2,.1);
+  background-color: rgba(.2,.2,.2,.4);
   margin: 1px;
   padding-top: .5em;
   padding-bottom: .1em;
@@ -43,7 +43,7 @@
 }
 
 .box-trigger:hover {
-  background-color: rgba(.9,.9,.9,.25);
+  background-color: rgba(.9,.9,.9,.6);
   height: auto;
 }
 
@@ -87,20 +87,19 @@
 }
 
 /* ACCOMPLISHMENTS + EXPERIENCE */
-#city_lights a {
-  text-decoration: none;
+
+#accomplishments h2 {
+  background-color: white;
+  color: black;
+  font-weight: 100;
 }
 
 .startUps h3 {
   font-size: 1.5em;
-}
-
-#accomplishments {
-  float: right;
+  font-weight: 100;
 }
 
 #resilient {
-  color: white;
   font-weight: 100
 }
 
@@ -114,6 +113,10 @@
 #wips #section-title{
   background-color:#7D8388;
   margin-bottom: 5em;
+}
+
+#wips h2 {
+  font-weight: 100;
 }
 
 .grid figure {
@@ -165,13 +168,14 @@
 
 #love_rails .creed {
   height: 100%;
-  background-color: #6B9499;
+  background-color: #996B6B;
   text-align: left;
   display: table;
   line-height: 1.77;
   p {
     color: black;
     font-size: 1em;
+    font-weight: 200;
   }
 }
 
@@ -186,10 +190,27 @@
 }
 
 .creed h3 {
-  font-size: 2em
+  font-size: 3em;
 }
 
 /* TESTIMONIALS */
+
+.testimonials h2 {
+  font-weight: 100;
+  background-color: white;
+  color: black;
+}
+
+.testifier h3 {
+  color: black;
+  background-color: rgba(255,255,255,1);
+  font-weight: 100;
+}
+
+.reveal-modal h2 {
+  color: black;
+  font-weight: 100;
+}
 
 .quote {
   font-weight: 100;
